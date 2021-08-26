@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gaismas Nams</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/LogoSmall.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <script type="text/javascript" src="script.js"></script>
+
+    <script type="text/javascript" src="./scripts/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="./scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="./scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="./scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a.photo").fancybox({
+                transitionIn: 'elastic',
+                transitionOut: 'elastic',
+                speedIn: 500,
+                speedOut: 500,
+                hideOnOverlayClick: false
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="top-menu clearfix">
+                    <div class="languages">
+                            <a href="indexLv.html"><img src="images/flag-lv.jpg" alt=""></a>
+                            <a href="indexRu.html"><img src="images/flag-ru.jpg" alt=""></a>
+                            <a href="indexUk.html"><img src="images/flag-uk.jpg" alt=""></a>
+                        </div>
+                <nav>
+                    <img class="navbar-logo" src="images/LogoBig.png" alt="ShopLogo" title="WebPageLogo" height="80">
+                    <ul class="menu-main">
+                        <li>
+                            <a href="indexUk.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="secondpageUk.html">Get lojalty card</a>
+                        </li>
+                        <li>
+                            <a href="thirdpageUk.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="forthpageUk.html">Contacts</a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </header>
+        <section>
+            <h3>Gallery</h3>
+            <div class="gallery">
+                <div class="img-wraper">
+                    <a rel="gallery" class="photo" href="images/gallery/Big/1.png" title="picture 1"><img src="images/gallery/Small/1.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/2.png" title="picture 2"><img src="images/gallery/Small/2.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/3.png" title="picture 3"><img src="images/gallery/Small/3.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/4.png" title="picture 4"><img src="images/gallery/Small/4.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/5.png" title="picture 5"><img src="images/gallery/Small/5.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/6.png" title="picture 6"><img src="images/gallery/Small/6.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/7.png" title="picture 7"><img src="images/gallery/Small/7.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/8.png" title="picture 8"><img src="images/gallery/Small/8.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/9.png" title="picture 9"><img src="images/gallery/Small/9.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/10.png" title="picture 10"><img src="images/gallery/Small/10.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/11.png" title="picture 11"><img src="images/gallery/Small/11.png"
+                            alt="" /></a>
+                    <a rel="gallery" class="photo" href="images/gallery/Big/12.png" title="picture 12"><img src="images/gallery/Small/12.png"
+                            alt="" /></a>
+                </div>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="partners">
+                <h4>Get discount with our loyalty card in more than 120.000 partner-companies</h4>
+            </div>
+        </section>
+        <section>
+            <div class="slider">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
+                            hidden="" checked="checked">
+                        <div class="carousel-item">
+                            <img src="images/1slide.png">
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
+                            hidden="">
+                        <div class="carousel-item">
+                            <img src="images/2slide.png">
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
+                            hidden="">
+                        <div class="carousel-item">
+                            <img src="images/3slide.png">
+                        </div>
+                        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                        <label for="carousel-2" class="carousel-control next control-1">›</label>
+                        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                        <label for="carousel-3" class="carousel-control next control-2">›</label>
+                        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                        <label for="carousel-1" class="carousel-control next control-3">›</label>
+                        <ol class="carousel-indicators">
+                            <li>
+                                <label for="carousel-1" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-2" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-3" class="carousel-bullet">•</label>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="contactUs">
+                    (c) All rights reserved
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

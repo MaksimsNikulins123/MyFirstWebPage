@@ -1,0 +1,311 @@
+body{
+    font-family: Ariel, sans-serif; 
+    margin: 0; 
+    padding: 0;
+    background: #39464f; 
+}
+*{
+    /* border: 5px solid red; */
+}
+.top-menu {
+    background: #39464f;
+    
+}
+.navbar-logo {
+    display: inline-block;  
+}
+.languages{
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+}
+.languages img {
+  height: 20px;
+  width: 40px;
+  padding-left: 20px;
+}
+.menu-main {
+    background: #39464f;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    float: right;
+    
+}
+.menu-main li {
+    display: inline-block;
+    
+    text-align: center;
+}
+.menu-main a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    line-height: 61px;
+    padding-left: 20px;
+    font-size: 18px;
+    color: azure;
+    transition:.3s linear;
+  }
+  .menu-main a:before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: #F73E24;
+    position: absolute;
+    left: 50%;
+    transform: rotate(45deg) translateX(6.5px);
+    opacity: 0;
+    transition: .3s linear;
+  }
+.menu-main a:hover:before {opacity: 1;}
+  @media (max-width: 660px) {
+.menu-main {
+    float: none;
+    padding-top: 20px;
+}
+.top-menu {
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+}
+.content {background: url(images/mainimg.png) no-repeat center top / cover;}
+.content {
+    min-height: 375px;
+}
+.button-wrapper {
+    max-width: 300px;
+    margin-top: 30px;
+    margin-bottom: 90px; 
+    /* margin: 100px auto; */
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    /* border: 5px solid red; */
+  }
+  .arrow-btn {
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #2fc989;
+    border: 4px solid #2fc989;
+    font-size: 10px;    
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    transition: .2s;
+    transition-delay: .1s;
+    /* border: 5px solid red; */
+  }
+  .arrow-btn:hover {
+    color: white;
+    padding: 15px 35px;   
+  }
+.clearfix {
+    content:"";
+    display: table;
+    width: 100%;
+    clear: both;
+    }
+.partners h4{
+margin-top: 5px;
+margin-bottom: 5px;
+  text-align: center;
+  color:azure;
+}
+  .carousel {
+      position: relative;
+      box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+      /* margin-top: 26px; */
+  }
+  
+  .carousel-inner {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+  }
+  
+  .carousel-open:checked + .carousel-item {
+      position: static;
+      opacity: 100;
+  }
+  
+  .carousel-item {
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: opacity 0.6s ease-out;
+      transition: opacity 0.6s ease-out;
+  }
+  
+  .carousel-item img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+  }
+  
+  .carousel-control {
+      background: rgba(0, 0, 0, 0.28);
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      font-size: 40px;
+      height: 40px;
+      line-height: 35px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      cursor: pointer;
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      text-align: center;
+      width: 40px;
+      z-index: 10;
+  }
+  
+  .carousel-control.prev {
+      left: 2%;
+  }
+  
+  .carousel-control.next {
+      right: 2%;
+  }
+  
+  .carousel-control:hover {
+      background: rgba(0, 0, 0, 0.8);
+      color: #aaaaaa;
+  }
+  
+  #carousel-1:checked ~ .control-1,
+  #carousel-2:checked ~ .control-2,
+  #carousel-3:checked ~ .control-3 {
+      display: block;
+  }
+  
+  .carousel-indicators {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10;
+  }
+  
+  .carousel-indicators li {
+      display: inline-block;
+      margin: 0 5px;
+  }
+  
+  .carousel-bullet {
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      font-size: 35px;
+  }
+  
+  .carousel-bullet:hover {
+      color: #aaaaaa;
+  }
+  
+  #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+  #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+  #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+      color: #428bca;
+  }
+  
+  #title {
+      width: 100%;
+      position: absolute;
+      padding: 0px;
+      margin: 0px auto;
+      text-align: center;
+      font-size: 27px;
+      color: rgba(255, 255, 255, 1);
+      font-family: 'Open Sans', sans-serif;
+      z-index: 9999;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+  }
+
+
+  .footer{
+    margin-left: 20px;
+  }
+
+  h3{
+    color:azure;
+    margin-left: 30px;
+  }
+  .gallery {
+    margin: 0px 20px 0px 20px;
+    min-height: 265px;
+    padding: 10px;
+    border: 5px solid azure;
+    border-radius: 5px;
+    background: rgb(33, 60, 61);
+  }
+  .img-wraper{
+      padding: 5px;
+    text-align: center;
+  }
+  .gallery img{
+    border: 5px solid rgb(184, 22, 84);
+    height: 125px;
+    width: 125px;
+    
+  }
+  a.photo:hover img{
+    border: 5px solid rgb(183, 194, 33);
+  }
+  .location {
+    width: 100%;
+  }
+  #map{
+    width: 70%;
+    margin: 0px 20px 0px 20px;
+    min-height: 295px;
+    padding: 10px;
+    /* border: 5px solid red; */
+    float: left;
+  }
+  .adress {
+    padding-top: 100px;
+    width: 25%;
+    float: left;
+    text-align: center;
+    color:azure;
+  }
+.registration {
+  height: 315px;
+}
+
+.login{
+    padding: 20px 0px 25px 50px;
+    float: left;
+    width: 300px;
+    /*border: 5px solid red; */
+} 
+
+
+.cashback img {
+    padding: 50px 0px 0px 80px;
+    width: 30%;
+    float: left;
+}
+
+.loyalty_card img { 
+    margin: 140px 20px 0px 0px;
+    float: right;
+    width: 20%;
+    background-color: #fff;
+    border: 5px solid rgb(252, 253, 255);
+}
+
